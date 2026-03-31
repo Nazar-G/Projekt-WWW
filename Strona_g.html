@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="Wszystko.css">
+    <meta charset="UTF-8">
+    <title>Języki progromowania</title>
+</head>
+<body>
+    <header>
+        <div id="pocz" onclick="slowScroll('top')">
+            <span><a href="Strona_g.html" title="" class="g">Programing< ></html></a></span>
+        </div>
+        <div id='strony'>
+            <a href="HTML.html" title="Html" >HTML</a>
+            <a href="CSS.html" title="CSS" >CSS</a>
+            <a href="JS.html" title="JS" >JavaScript</a>
+            <a href="inne.html" title="Inne" >Inne</a>
+        </div>
+    </header>
+    <div id="Html">
+        
+        <h1>Web-programowanie</h1>
+        <div id="poz">
+        <h3>Programowanie w Internecie w dzisiejszych czasach jest jednym z najbardziej obiecujących obszarów działalności. W dzisiejszym świecie, jeśli jakakolwiek firma nie ma własnej strony internetowej, pozostaje daleko w tyle za konkurencją.
+
+            Aby tworzyć interaktywne i kompaktowe aplikacje internetowe, musisz znać wiele nowoczesnych standardów internetowych. Nie udajemy kompleksowego opisu tych standardów, jednak staraliśmy się zebrać wiele interesujących materiałów, które będą dobrym impulsem dla początkujących programistów internetowych.</h3>
+        </div>
+        </div>
+
+    <div id="Html5">
+        <h1>Składa się z</h1>
+        <div class="licz">
+            <h3>Html</h3>
+            <h3>CSS</h3>
+            <h3 class="ost">JavaScript</h3>
+        </div>
+    </div>
+
+    <div id="contakt">
+        <h2>Formularz kontaktowy</h2>
+        <div class="pole">
+        <form id="contakt_wp">
+            <label for="name">Imia Nazwisko</label><br>
+            <input type="text" placeholder="Garbarynin Nazarii" name="name" id="name"><br>
+            <label for="email">Email </label><br>
+            <input type="email" placeholder="n.harbarunin@gmail.com" name="email" id="email"><br>
+            <label for="message">Wiadomość</label><br>
+            <textarea placeholder="Bardzo dodra strona" name="message" id="message"></textarea><br>
+            <div id="mess_send" class="btn">Wysłac</div>
+        </form>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+          $('html, body').animate({
+            scrollTop: $(id).offset().top
+          }, 500);
+        }
+    
+        $(document).on("scroll", function () {
+          if($(window).scrollTop() === 0)
+            $("header").removeClass("fix");
+          else
+            $("header").attr("class", "fix");
+        });
+      </script>
+</body>
+</html>

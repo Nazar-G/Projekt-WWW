@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="Wszystko.css">
+    <meta charset="UTF-8">
+    <title>Języki progromowania</title>
+</head>
+<body>
+    <header>
+        <div id="pocz" onclick="slowScroll('top')">
+            <span><a href="Strona_g.html" title="StronG" class="g">Programing<></html></a></span>
+        </div>
+        <div id='strony'>
+            <a href="HTML.html" title="Html" class="colorhtml" >HTML</a>
+            <a href="CSS.html" title="CSS" >< CSS></a>
+            <a href="JS.html" title="JS" >JavaScript</a>
+            <a href="inne.html" title="Inne" >Inne</a>
+        </div>
+    </header>
+    <div id="css">
+        <h1>CSS</h1>
+        <div id="poz">
+        <h3>
+            Kaskadowe arkusze stylów CSS (ang. Cascading Style Sheets) to kod służący do nadawania wyglądu strony. CSS Podstawy przeprowadzi cię przez bazowe zagadnienia, abyś mógł zacząć modyfikować wygląd swojej strony. Odpowiemy na takie pytania jak: Jak zrobić, żeby mój tekst był czarny albo czerwony? Jak wyświetlić poszczególną zawartość strony w wybranych miejscach ekranu? Jak dekorować stronę obrazami czy nadać kolor tła?
+        </h3></div>
+    </div>
+    <div id="inne">
+        <h1>Link do źródła</h1>
+        <a href="https://medium.com/@ankurdhamija83/understanding-the-concept-of-css-web-development-basics-bc7e864b864f"> Ankur Dhamija </a>
+        <a href="https://www.w3schools.com/css/">W3schools</a>
+        <a href="https://developer.mozilla.org/pl/docs/Learn/Getting_started_with_the_web/CSS_basics">MDN Web Docs</a>
+        <a href="https://www.w3.org/Style/CSS/Overview.en.html">W3</a>
+    </div>
+    
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+          $('html, body').animate({
+            scrollTop: $(id).offset().top
+          }, 500);
+        }
+    
+        $(document).on("scroll", function () {
+          if($(window).scrollTop() === 0)
+            $("header").removeClass("fix");
+          else
+            $("header").attr("class", "fix");
+        });
+      </script>
+</body>
+</html>

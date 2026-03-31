@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="Wszystko.css">
+    <meta charset="UTF-8">
+    <title>Języki progromowania</title>
+</head>
+<body>
+    <header>
+        <div id="pocz" onclick="slowScroll('top')">
+            <span><a href="Strona_g.html" title="StronG" class="g">Programing<></html></a></span>
+        </div>
+        <div id='strony'>
+            <a href="HTML.html" title="Html" class="colorhtml"  >< HTML></HTML></a>
+            <a href="CSS.html" title="CSS" >CSS</a>
+            <a href="JS.html" title="JS" >JavaScript</a>
+            <a href="" title="Inne" >Inne</a>
+        </div>
+    </header>
+    <div id="dhtml">
+        <h1>HTML</h1>
+        <div id="poz">
+        <h3>
+            HTML nie jest językiem programowania; jest językiem znaczników (ang. markup language). HTML składa się z serii znaczników (tagów), których używa się do zamknięcia, opakowania różnych części treści, tak aby wyglądały i/lub działały w określony sposób. Z pomocą tagów możesz ze słów czy obrazów zrobić linki do innych stron, sprawić by były napisane kursywą, większą czcionką, wytłuścić je itd. 
+        </h3></div>
+    </div>
+    <div id="inne">
+        <h1>Link do źródła</h1>
+        <a href="https://developer.mozilla.org/pl/docs/Glossary/HTML"> MDN Web Docs </a>
+        <a href="https://www.w3schools.com/html/default.asp">W3schools</a>
+        <a href="https://www.tutorialspoint.com/html/html_text_links.htm">Tutorialspoint</a>
+        <a href="https://www.tutorialrepublic.com/html-tutorial/html-links.php">TutorialRepublic</a>
+    </div>
+    
+       
+ 
+    
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+          $('html, body').animate({
+            scrollTop: $(id).offset().top
+          }, 500);
+        }
+    
+        $(document).on("scroll", function () {
+          if($(window).scrollTop() === 0)
+            $("header").removeClass("fix");
+          else
+            $("header").attr("class", "fix");
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="Wszystko.css">
+    <meta charset="UTF-8">
+    <title>Języki progromowania</title>
+</head>
+<body>
+    <header>
+        <div id="pocz" onclick="slowScroll('top')">
+            <span><a href="Strona_g.html" title="StronG" class="g">Programing<></html></a></span>
+        </div>
+        <div id='strony'>
+            <a href="HTML.html" title="Html" class="colorhtml"  > HTML</a>
+            <a href="CSS.html" title="CSS" >CSS</a>
+            <a href="JS.html" title="JS" >< JavaScript></a>
+            <a href="inne.html" title="Inne" >Inne</a>
+        </div>
+    </header>
+    <div id="JS">
+        <h1>Js</h1>
+        <div id="poz">
+        <h3>
+            JavaScript (JS) to skryptowy (interpretowany lub kompilowany metodą JIT) język programowania, w którym funkcje są "obywatelami pierwszej kategorii" - obiektami, które można przechowywać w zmiennych jako referencje i przekazywać jak każde inne obiekty. Chociaż JavaScript jest najbardziej znany jako język skryptowy dla stron internetowych, używa go również wiele środowisk poza przeglądarką, takich jak Node.js, Apache CouchDB czy Adobe Acrobat. JavaScript jest językiem opartym na prototypach, wielu paradygmatach, dynamicznej składni, zorientowanym obiektowo, o stylu imperatywnym i deklaratywnym (np. programowanie funkcyjne). 
+        </h3></div>
+    </div>
+    <div id="inne">
+        <h1>Link do źródła</h1>
+        <a href="https://developer.mozilla.org/pl/docs/Web/JavaScript">MDN Web Docs </a>
+        <a href="https://www.w3schools.com/js/">W3schools</a>
+        <a href="https://learn.javascript.ru/">JAVASCRIPT</a>
+        <a href="https://www.javascript.com/">JavaScript</a>
+    </div>
+    
+       
+ 
+    
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+          $('html, body').animate({
+            scrollTop: $(id).offset().top
+          }, 500);
+        }
+    
+        $(document).on("scroll", function () {
+          if($(window).scrollTop() === 0)
+            $("header").removeClass("fix");
+          else
+            $("header").attr("class", "fix");
+        });
+      </script>
+</body>
+</html>
